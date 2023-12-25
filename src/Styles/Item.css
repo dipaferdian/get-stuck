@@ -1,11 +1,11 @@
-.flex-container {
+.grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 20px;
 }
 
-.flex-item {
+.grid-item {
   padding: 10px;
   max-width: 150px;
   margin: auto;
@@ -20,7 +20,9 @@
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
   }
 }

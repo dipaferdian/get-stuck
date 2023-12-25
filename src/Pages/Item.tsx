@@ -1,4 +1,5 @@
-import GetShoes, { Ishoes } from "../Apis/shoes/GetShoes"
+import React from "react"
+import GetShoes from "../Apis/shoes/GetShoes"
 import "../Styles/Item.css"
 
 function Item(): React.ReactElement {
@@ -7,9 +8,9 @@ function Item(): React.ReactElement {
 
     return (
         <>
-            <div className="flex-container">
+            <div className="grid-container">
                 {shoes.map((item) => (
-                    <div className="flex-item" key={item.id}>
+                    <div className="grid-item" key={item.id}>
                         <a href={item.link} target="_blank">
                             <img src={item.image} alt="Logo" className="img-shoes" />
                             {item.description}
