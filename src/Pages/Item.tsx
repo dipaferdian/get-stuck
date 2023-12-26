@@ -11,7 +11,7 @@ function Item(): React.ReactElement {
             <div className="grid-container">
                 {data.map((item) => (
                     <div className="grid-item" key={item.id}>
-                        <a href={item.link} target="_self">
+                        <a href="#" target="_self">
                             <img src={item.image} alt="Logo" className="img-item" />
                         </a>
                         <div>
