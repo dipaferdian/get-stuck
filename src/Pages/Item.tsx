@@ -1,17 +1,33 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import GetContents from "../Apis/GetContent"
 import "../Styles/Item.css"
+import Loading from "../Components/Loading"
 
 function Item(): React.ReactElement {
 
-    const data = GetContents([])
+    const [stateLoading, setLoading] = useState<boolean>(false);
+
+    const data = GetContents(2, [])
+
+    useEffect(() =>{
+        
+        if (data.length == 0) {
+            setLoading(true)
+        }
+                
+        if (data.length != 0) {
+            setLoading(false)
+        }
+
+    }, [data])
 
     return (
         <>
             <div className="grid-container">
-                {data.map((item) => (
+                {stateLoading ? <Loading /> : 
+                data.map((item) => (
                     <div className="grid-item" key={item.id}>
-                        <a href="#" target="_self">
+                        <a href={item.link} target="_self">
                             <img src={item.image} alt="Logo" className="img-item" />
                         </a>
                         <div>

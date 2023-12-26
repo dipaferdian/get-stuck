@@ -10,16 +10,23 @@ export interface IContent {
   link?: string
 }
 
-export interface Contents extends Array<IContent>{}
+export interface Contents extends Array<IContent> { }
 
-function GetContent(initialShoes: Contents): Contents {
+function GetContent(page: number, initialShoes: Contents): Contents {
 
   const [getContent, setContent] = useState(initialShoes)
 
-  useEffect(() =>{
-    setContent(getContents)
-  }, [])
-  
+  axios.get(`${process.env.REACT_APP_API}?page=${page}`)
+
+    .then(function (response) {
+      // handle success
+      setContent(response.data)
+    })
+    .catch(function (error) {
+      // handle error
+      console.log(error);
+  })
+
   return getContent
 }
 
