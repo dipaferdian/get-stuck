@@ -2,7 +2,6 @@
   overflow: hidden;
   background-color: #333;
   position: fixed;
-  display: flex;
   width: 100%;
 }
 

@@ -1,32 +1,25 @@
 import React from "react"
-import GetShoes from "../Apis/Shoes/GetShoes"
+import GetContents from "../Apis/GetContent"
 import "../Styles/Item.css"
-import GetShirt from "../Apis/Shirts/GetShirts"
 
 function Item(): React.ReactElement {
 
-    const shoes = GetShoes([])
-    const shirts = GetShirt([])
+    const data = GetContents([])
 
     return (
         <>
             <div className="grid-container">
-                {shoes.map((item) => (
+                {data.map((item) => (
                     <div className="grid-item" key={item.id}>
-                        <a href={item.link} target="_blank">
-                            <img src={item.image} alt="Logo" className="img-shoes" />
-                            {item.description}
+                        <a href={item.link} target="_self">
+                            <img src={item.image} alt="Logo" className="img-item" />
                         </a>
-                    </div>
-                )
-                )}
-
-                {shirts.map((item) => (
-                    <div className="grid-item" key={item.id}>
-                        <a href={item.link} target="_blank">
-                            <img src={item.image} alt="Logo" className="img-shoes" />
-                            {item.description}
-                        </a>
+                        <div>
+                          <span className="title-item">{item.title}</span>
+                        </div>
+                        <div>
+                          <span className="description-item">{item.description}</span>
+                        </div>
                     </div>
                 )
                 )}
