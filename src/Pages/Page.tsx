@@ -1,13 +1,13 @@
 import React from "react";
 import Layout from "../Layouts/Layout";
-import Item from "./Item";
+import Item from "./Items/Item";
 
 
-function Page(): React.ReactElement{
+function Page(): React.ReactElement {
 
     return (
         <>
-         <Layout item={<Item />}/>
+            <Layout item={<Item />} />
         </>
     )
 }

@@ -5,6 +5,7 @@
 	border: 5px solid #eaf5fe;
 	border-right-color: rgba(0, 0, 255, .2);
 	animation: rotateSpinner 800ms linear infinite;
+    background: aquamarine;
 	margin-left: auto;
 	margin-right: auto;
 }

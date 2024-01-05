@@ -34,6 +34,30 @@
   font-weight: bold;
 }
 
+.grid-item.clicked { 
+  animation: slideDown 1s ease-in-out;
+  animation-direction: alternate;
+  /* animation-iteration-count: 3; */ /* repeat */
+  position: relative;
+  animation: move-element 1s ease 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-element {
+  from { top: 0%; left: 0%; }
+  to { 
+    position: relative; top: 50%; margin: auto; }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100px);
+  }
+}
+
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {

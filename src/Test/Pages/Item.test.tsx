@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Item from '../../Pages/Item';
+import Item from '../../Pages/Items/ListItem';
 import { debug } from 'console';
 
 test('renders item', () => {

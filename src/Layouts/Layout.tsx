@@ -1,5 +1,5 @@
 import React from "react"
-import "../Styles/Main.css"
+import "../Styles/Layouts/Main.css"
 import Navbar from "./Navbar"
 import Main from "./Main"
 

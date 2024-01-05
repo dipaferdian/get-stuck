@@ -5,27 +5,18 @@ import { useEffect, useState } from 'react';
 export interface IContent {
   id?: number,
   title: string,
-  image?: string,
-  description?: string,
-  link?: string
+  description?: string
 }
 
 export interface Contents extends Array<IContent> { }
 
-function GetContent(page: number, initialShoes: Contents): Contents {
+function GetContent(initialShoes: Contents): Contents {
 
   const [getContent, setContent] = useState(initialShoes)
 
-  axios.get(`${process.env.REACT_APP_API}?page=${page}`)
-
-    .then(function (response) {
-      // handle success
-      setContent(response.data)
-    })
-    .catch(function (error) {
-      // handle error
-      console.log(error);
-  })
+   useEffect(() => {
+     setContent(getContents)
+   }, [])
 
   return getContent
 }
