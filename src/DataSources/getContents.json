@@ -2,18 +2,39 @@
     {
         "id": 1,
         "title": "Ruby on Rails",
-        "description": "Pada kali ini kita akan memahami bagaimana find_by itu ?",
+        "description": "Error find_by ?",
+        "author": "dipa ferdian",
         "child": [
             {
                 "id": 1,
-                "title": "Apa itu ActiveRecord",
-                "description": "Dalam kerangka kerja Ruby on Rails, Active Record adalah bagian dari pola desain yang disebut Active Record Pattern. Active Record adalah implementasi ORM (Object-Relational Mapping) yang memungkinkan pengembang untuk berinteraksi dengan basis data menggunakan objek-objek Ruby",
+                "title": "Memahami ActiveRecord",
+                "description": "Sebelum Mengenal apa itu find_by, alangkah baiknya kita mengetahui apa itu ActiveRecord, ActiveRecord adalah salah satu model dirails untuk mengambil record didatabase ini menggunakan Object relation mapping(ORM), sehingga kita bisa menggunakan nya untuk mengambil data dari database dengan lebih mudah",
                 "link": "https://guides.rubyonrails.org/active_record_basics.html"
             },
             {
                 "id": 2,
-                "title": "find_by error jika",
+                "title": "Error []",
                 "description": "find_by hanya befungsi jika mengambil record dari model, jika digunakan seperti ini [].find_by maka akan terjadi error (undefined method `find_by' for []:Array)",
+                "link": "https://api.rubyonrails.org/v7.1.2/classes/ActiveRecord/FinderMethods.html#method-i-find_by"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Ruby on Rails",
+        "description": "Error Install ruby versi 2.5.5 di ubuntu 22.04",
+        "author": "dipa ferdian",
+        "child": [
+            {
+                "id": 1,
+                "title": "Memahami versi ruby",
+                "description": "Ketika versi ruby dirubah maka akan mengubah gem lain yang terkait dengan versi ruby nya, karena gem menggunakan berdasarkan versi ruby",
+                "link": "https://guides.rubyonrails.org/active_record_basics.html"
+            },
+            {
+                "id": 2,
+                "title": "Error 2.5.5",
+                "description": "Karena ruby bisa berjalan dengan menggunakan architecture tertentu jadi ada langkah yang perlu di perhatikan ketika menginstall nya, untuk mengatasi nya kita bisa jalankan `rvm pkg install openssl` dan kemudian jalankan `rvm install 2.5.5 --with-openssl-dir=$HOME/.rvm/usr`, saya tidak tahu persis bagaimana proses nya karena terlalu abstrak 😁",
                 "link": "https://api.rubyonrails.org/v7.1.2/classes/ActiveRecord/FinderMethods.html#method-i-find_by"
             }
         ]

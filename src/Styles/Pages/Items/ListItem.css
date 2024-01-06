@@ -75,12 +75,60 @@
   box-shadow: 12px 12px 10px 1px rgba(0, 0, 255, .2);
 }
 
+.detail-item{
+  justify-content: end;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto; /* Push the item to the bottom */
+  margin-left: auto; /* Push the item to the right */
+}
+
+
+.bottom-right-item {
+  margin-top: auto; /* Push the item to the bottom */
+  margin-left: auto; /* Push the item to the right */
+}
+
+.author-label{
+  font-family: 'Arial', sans-serif; /* Specify your preferred font family */
+  font-weight: bold; /* Set the font weight to bold */
+  font-size: 10px; /* Set the font size */
+  color: #3498db; /* Set the text color */
+  text-align: center; /* Align the text to the center */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Add spacing between letters */
+  line-height: 1.5; /* Set the line height */
+  margin: 10px; /* Add margin around the text */
+  padding: 10px; /* Add padding around the text */
+  background-color: white; /* Set a background color */
+  border: 2px solid #3498db; /* Add a border */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.author-name{
+  font-family: 'Arial', sans-serif; /* Specify your preferred font family */
+  font-size: 10px; /* Set the font size */
+  font-weight: bold; /* Set the font weight to bold */
+  color: #3498db; /* Set the text color */
+  text-align: center; /* Align the text to the center */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Add spacing between letters */
+  line-height: 1.5; /* Set the line height */
+  margin: 10px; /* Add margin around the text */
+  padding: 10px; /* Add padding around the text */
+  background-color: white; /* Set a background color */
+  border: 2px solid #3498db; /* Add a border */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
 @keyframes slideDown {
   from {
     transform: translateY(0);
   }
   to {
-    transform: translateY(70px);
+    transform: translateY(5px);
   }
 }
 
@@ -91,10 +139,36 @@
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 20px;
-    padding: 20px;
+    padding: 40px;
   }
 
   .grid-item{
     box-shadow: 12px 12px 12px 10px rgba(0, 0, 255, .2);
+  }
+
+  .detail-item{
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto; /* Push the item to the bottom */
+    margin-left: auto; /* Push the item to the right */
+  }
+
+  .bottom-right-item {
+    margin-top: auto; /* Push the item to the bottom */
+    margin-left: auto; /* Push the item to the right */
+  }
+  
+  .grid-item{
+    cursor: pointer;
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+    min-width: 300px;
+    border: 2px solid rgb(249, 249, 249);
+    border-radius: 5px;
+    box-shadow: 12px 12px 20px 1px rgba(0, 0, 255, .2);
+    transition: transform 150ms ease-in-out;
+    min-height: 0%;
   }
 }

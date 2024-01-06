@@ -34,38 +34,38 @@ function ListItem(): React.ReactElement {
         // Get the parent element
         let parentElement = event.currentTarget
 
-            const childs = child ?? []
+        const childs = child ?? []
 
-            if (childs.length > 0) {
+        if (childs.length > 0) {
 
-                for (const item of childs) {
+            for (const item of childs) {
 
-                    // Create a new element
-                    let ElementDiv = document.createElement("div");
-                    let elementTitle = document.createElement("div");
-                    let elementLink = document.createElement("a");
+                // Create a new element
+                let ElementDiv = document.createElement("div");
+                let elementTitle = document.createElement("div");
+                let elementLink = document.createElement("a");
 
-    
-                    ElementDiv.textContent = item.description as string
-                    ElementDiv.classList.add('grid-item-child');
 
-                    elementTitle.textContent = item.title as string
-                    elementTitle.classList.add('title-child');
+                ElementDiv.textContent = item.description as string
+                ElementDiv.classList.add('grid-item-child');
 
-                    elementLink.textContent = linkTitle
-                    elementLink.classList.add('title-link-child')
-                    elementLink.setAttribute('href', item.link as string)
-                    elementLink.setAttribute('target', '_blank')
+                elementTitle.textContent = item.title as string
+                elementTitle.classList.add('title-child');
 
-                    parentElement.append(elementTitle);
+                elementLink.textContent = linkTitle
+                elementLink.classList.add('title-link-child')
+                elementLink.setAttribute('href', item.link as string)
+                elementLink.setAttribute('target', '_blank')
 
-                    // Insert the new element before the first child
-                    parentElement.append(ElementDiv);
+                parentElement.append(elementTitle);
 
-                    ElementDiv.appendChild(elementLink);
-                    
-                } 
+                // Insert the new element before the first child
+                parentElement.append(ElementDiv);
+
+                ElementDiv.appendChild(elementLink);
+
             }
+        }
     };
 
     useEffect(() => {
@@ -120,8 +120,16 @@ function ListItem(): React.ReactElement {
                             </div>
                             <div>
                                 <span className="description-item">{
-                                     item.description
-                                 }</span>
+                                    item.description
+                                }</span>
+                            </div>
+                            <div className="detail-item">
+                                <div className="bottom-right-item">
+                                    <span className="author">
+                                        <p className="author-label">Author</p>
+                                        <p className="author-name">{item.author}</p>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     )

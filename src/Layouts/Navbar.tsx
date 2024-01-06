@@ -6,7 +6,7 @@ function Navbar(): React.ReactElement {
     return (
         <>
             <div className="topnav">
-                <a href="#" onClick={(event) => alert('Cooming Soon')}>Mrpwd</a>
+                <a href="#" onClick={(event) => alert('Cooming Soon')}>byby Error 👋</a>
             </div>
         </>
     )
