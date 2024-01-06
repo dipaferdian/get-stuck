@@ -2,10 +2,19 @@ import axios from 'axios';
 import getContents from '../DataSources/getContents.json';
 import { useEffect, useState } from 'react';
 
+export interface Ichild {
+  id?: number,
+  title?: string,
+  description?: string,
+  link?: string
+ }
+
+
 export interface IContent {
   id?: number,
   title: string,
-  description?: string
+  description?: string,
+  child?: Array<Ichild>
 }
 
 export interface Contents extends Array<IContent> { }
