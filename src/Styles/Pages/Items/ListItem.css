@@ -7,6 +7,11 @@
   padding: 40px;
 }
 
+.grid-container-child {
+  padding: 20px;
+  text-wrap:wrap;
+}
+
 .grid-item{
   cursor: pointer;
   padding: 10px;
@@ -44,9 +49,12 @@
 }
 
 @keyframes move-element {
-  from { top: 0%; left: 0%; }
+  from { top: 0%; left: 0%; width: 100%;}
   to { 
-    position: relative; top: 50%; margin: auto; }
+    top: 10%;
+    width: 100%;
+    max-width:max-content;
+  }
 }
 
 @keyframes slideDown {
