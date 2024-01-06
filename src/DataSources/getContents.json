@@ -9,6 +9,12 @@
                 "title": "Apa itu ActiveRecord",
                 "description": "Dalam kerangka kerja Ruby on Rails, Active Record adalah bagian dari pola desain yang disebut Active Record Pattern. Active Record adalah implementasi ORM (Object-Relational Mapping) yang memungkinkan pengembang untuk berinteraksi dengan basis data menggunakan objek-objek Ruby",
                 "link": "https://guides.rubyonrails.org/active_record_basics.html"
+            },
+            {
+                "id": 2,
+                "title": "find_by error jika",
+                "description": "find_by hanya befungsi jika mengambil record dari model, jika digunakan seperti ini [].find_by maka akan terjadi error (undefined method `find_by' for []:Array)",
+                "link": "https://api.rubyonrails.org/v7.1.2/classes/ActiveRecord/FinderMethods.html#method-i-find_by"
             }
         ]
     }

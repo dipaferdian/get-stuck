@@ -97,14 +97,4 @@
   .grid-item{
     box-shadow: 12px 12px 12px 10px rgba(0, 0, 255, .2);
   }
-
-  
-  /* .grid-container.clicked {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
-    padding: 20px;
-  } */
-  
 }
