@@ -44,17 +44,7 @@
   animation-direction: alternate;
   /* animation-iteration-count: 3; */ /* repeat */
   position: relative;
-  animation: move-element 1s ease 1s;
   animation-fill-mode: forwards;
-}
-
-@keyframes move-element {
-  from { top: 0%; left: 0%; width: 100%;}
-  to { 
-    top: 10%;
-    width: 100%;
-    max-width:max-content;
-  }
 }
 
 @keyframes slideDown {
