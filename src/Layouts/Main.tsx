@@ -10,7 +10,9 @@ function Main(render_page: ILayout): React.ReactElement {
     return (
         <>
             <div id="main">
-              {render_page.pages}
+              <div className="content">
+               {render_page.pages}
+              </div>
             </div>
         </>
     )

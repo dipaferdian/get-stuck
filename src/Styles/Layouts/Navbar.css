@@ -21,3 +21,18 @@
   background-color: #ddd;
   color: rgb(249, 249, 249);
 }
+
+
+@media (max-width: 800px) {
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  font-weight: bold;
+  color: rgba(6, 6, 82, 0.844);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+   
+}

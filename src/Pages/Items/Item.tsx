@@ -3,7 +3,7 @@ import ListItem from "./ListItem";
 import Input from "../../Components/Input";
 
 
-function Index(): React.ReactElement {
+function Item(): React.ReactElement {
 
     return (
         <>
@@ -13,4 +13,4 @@ function Index(): React.ReactElement {
     )
 }
 
-export default Index
+export default Item
