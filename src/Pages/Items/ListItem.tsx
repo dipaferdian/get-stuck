@@ -4,6 +4,7 @@ import "../../Styles/Pages/Items/ListItem.css"
 import Loading from "../../Components/Loading"
 
 const linkTitle = "Tautan Berguna"
+const imageAlt  = "Dari internet"
 
 function ListItem(): React.ReactElement {
 
@@ -44,7 +45,7 @@ function ListItem(): React.ReactElement {
                 let ElementDiv = document.createElement("div");
                 let elementTitle = document.createElement("div");
                 let elementLink = document.createElement("a");
-
+                let elementImage = document.createElement("img");
 
                 ElementDiv.textContent = item.description as string
                 ElementDiv.classList.add('grid-item-child');
@@ -57,12 +58,19 @@ function ListItem(): React.ReactElement {
                 elementLink.setAttribute('href', item.link as string)
                 elementLink.setAttribute('target', '_blank')
 
+                elementImage.setAttribute('src', item.image as string)
+                elementImage.setAttribute('alt', imageAlt)
+
                 parentElement.append(elementTitle);
 
                 // Insert the new element before the first child
                 parentElement.append(ElementDiv);
 
                 ElementDiv.appendChild(elementLink);
+
+                if (item.image) {
+                    elementTitle.appendChild(elementImage);                    
+                }
 
             }
         }

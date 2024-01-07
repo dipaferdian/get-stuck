@@ -1,41 +1,45 @@
 [
     {
         "id": 1,
-        "title": "Ruby on Rails",
-        "description": "Error find_by ?",
+        "title": "Jejaring Sosial",
+        "description": "Mari kita memahami lebih luas bagaimana jejaring sosial bisa di jadikan sebuah ide untuk menciptakan aplikasi.",
         "author": "dipa ferdian",
         "child": [
             {
                 "id": 1,
-                "title": "Memahami ActiveRecord",
-                "description": "Sebelum Mengenal apa itu find_by, alangkah baiknya kita mengetahui apa itu ActiveRecord, ActiveRecord adalah salah satu model dirails untuk mengambil record didatabase ini menggunakan Object relation mapping(ORM), sehingga kita bisa menggunakan nya untuk mengambil data dari database dengan lebih mudah",
-                "link": "https://guides.rubyonrails.org/active_record_basics.html"
+                "title": "Hubungan perasaan dan ungkapan yang ingin di ungkapkan secara psikologi",
+                "description": "Manusia adalah makhluk sosial yang cenderung mencari hubungan dengan orang lain. Interaksi sosial memberikan dukungan emosional, menyediakan saluran komunikasi, dan menciptakan rasa keterhubungan. Ini bisa terjadi dalam keluarga, teman, atau lingkungan sosial lainnya",
+                "link": "https://www.facebook.com/",
+                "image": "https://asset-a.grid.id/crop/0x0:0x0/x/photo/2022/11/28/contoh-interaksi-sosial-di-lingk-20221128085706.jpg"
             },
             {
                 "id": 2,
-                "title": "Error []",
-                "description": "find_by hanya befungsi jika mengambil record dari model, jika digunakan seperti ini [].find_by maka akan terjadi error (undefined method `find_by' for []:Array)",
-                "link": "https://api.rubyonrails.org/v7.1.2/classes/ActiveRecord/FinderMethods.html#method-i-find_by"
+                "title": "Ungkapan Perasaan",
+                "description": "Ungkapan perasaan melibatkan cara kita menyampaikan emosi dan mengkomunikasikan apa yang kita rasakan kepada orang lain. Ini bisa meliputi ekspresi wajah, bahasa tubuh, atau komunikasi verbal. Mengungkapkan perasaan membantu mengurangi stres, meningkatkan pemahaman antarindividu, dan memperkuat ikatan sosial.",
+                "link": "https://greatmind.id/article/berkenalan-dengan-perasaan",
+                "image": "https://cms.sehatq.com/cdn-cgi/image/format=auto,width=1080,quality=90/public/img/article_img/mengenal-perbedaan-emosi-dan-perasaan-1632160371.jpg"
             }
         ]
     },
     {
         "id": 2,
-        "title": "Ruby on Rails",
-        "description": "Error Install ruby versi 2.5.5 di ubuntu 22.04",
+        "title": "Jejaring Sosial",
+        "description": "Mari kita memahami lebih luas bagaimana jejaring sosial bisa di jadikan sebuah ide untuk menciptakan aplikasi.",
         "author": "dipa ferdian",
         "child": [
             {
                 "id": 1,
-                "title": "Memahami versi ruby",
-                "description": "Ketika versi ruby dirubah maka akan mengubah gem lain yang terkait dengan versi ruby nya, karena gem menggunakan berdasarkan versi ruby, beberapa cara untuk menginstall versi ruby salah satunya menggunakan rvm",
-                "link": "https://rvm.io/rvm/install"
+                "title": "Hubungan perasaan dan ungkapan yang ingin di ungkapkan secara psikologi",
+                "description": "Manusia adalah makhluk sosial yang cenderung mencari hubungan dengan orang lain. Interaksi sosial memberikan dukungan emosional, menyediakan saluran komunikasi, dan menciptakan rasa keterhubungan. Ini bisa terjadi dalam keluarga, teman, atau lingkungan sosial lainnya",
+                "link": "https://www.facebook.com/",
+                "image": "https://asset-a.grid.id/crop/0x0:0x0/x/photo/2022/11/28/contoh-interaksi-sosial-di-lingk-20221128085706.jpg"
             },
             {
                 "id": 2,
-                "title": "Error 2.5.5",
-                "description": "Karena ruby bisa berjalan dengan menggunakan architecture tertentu jadi ada langkah yang perlu di perhatikan ketika menginstall nya, untuk mengatasi nya kita bisa jalankan `rvm pkg install openssl` dan kemudian jalankan `rvm install 2.5.5 --with-openssl-dir=$HOME/.rvm/usr`, saya tidak tahu persis bagaimana proses nya karena terlalu abstrak 😁",
-                "link": "https://stackoverflow.com/questions/15511943/troubles-with-rvm-and-openssl"
+                "title": "Ungkapan Perasaan",
+                "description": "Ungkapan perasaan melibatkan cara kita menyampaikan emosi dan mengkomunikasikan apa yang kita rasakan kepada orang lain. Ini bisa meliputi ekspresi wajah, bahasa tubuh, atau komunikasi verbal. Mengungkapkan perasaan membantu mengurangi stres, meningkatkan pemahaman antarindividu, dan memperkuat ikatan sosial.",
+                "link": "https://greatmind.id/article/berkenalan-dengan-perasaan",
+                "image": "https://cms.sehatq.com/cdn-cgi/image/format=auto,width=1080,quality=90/public/img/article_img/mengenal-perbedaan-emosi-dan-perasaan-1632160371.jpg"
             }
         ]
     }

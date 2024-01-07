@@ -6,7 +6,8 @@ export interface Ichild {
   id?: number,
   title?: string,
   description?: string,
-  link?: string
+  link?: string,
+  image?: string
  }
 
 
