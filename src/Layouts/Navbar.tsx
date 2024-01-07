@@ -3,17 +3,21 @@ import "../Styles/Layouts/Navbar.css"
 import "../Styles/Pages/About.css"
 import "../Styles/Pages/Read.css"
 import About from "../Pages/About"
+import Main from "./Main"
 
 function Navbar(): React.ReactElement {
 
     const [showAbout, setShowAbout] = useState<boolean>(false)
+    const [showRead, setShowRead] = useState<boolean>(true)
 
-    const handleClick = (event: React.BaseSyntheticEvent) => {
+
+    const handleAboutClick = (event: React.BaseSyntheticEvent) => {
 
         const contentHidden = event.currentTarget.parentNode.parentNode.querySelector('.content').style.visibility
         event.currentTarget.parentNode.parentNode.querySelector('.content').style.visibility = 'hidden';
 
         setShowAbout(!showAbout)
+        setShowRead(!showRead)
 
         if (contentHidden == 'hidden') {
             event.currentTarget.parentNode.parentNode.querySelector('.content').style.visibility = 'visible';
@@ -22,18 +26,26 @@ function Navbar(): React.ReactElement {
 
     }
 
+    const handleReadClick = (event: React.BaseSyntheticEvent) => {
+        event.currentTarget.parentNode.parentNode.querySelector('.content').style.visibility = 'visible';
+        setShowRead(true)
+        setShowAbout(!showAbout)
+    }
+
     return (
         <>
             <div className="topnav">
                 <a href="#" onClick={(event) => alert('Cooming Soon')}>Byby Think Wide 👋</a>  
-                <div>
-                     <a href="#">Read 📖</a>
+                <div onClick={(event) => handleReadClick(event)}>
+                    {showAbout && <a href="#">Read 📖</a> }
                 </div>                   
-                <div className="about" onClick={(event) => handleClick(event)}>
-                    <a href="#">About 🙋‍♂️</a>
+                <div className="about" onClick={(event) => handleAboutClick(event)}>
+                   {showRead && <a href="#">About 🙋‍♂️</a>}
                 </div>
             </div>
-            {showAbout && <About />}
+            {
+                showAbout && <About />
+            }
         </>
     )
 

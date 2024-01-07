@@ -1,3 +1,29 @@
+
+.main-about {
+    margin: 0 auto; 
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-about {
+    cursor: pointer;
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+    min-width: 300px;
+    border: 2px solid rgb(249, 249, 249);
+    border-radius: 5px;
+    box-shadow: 10px 12px 10px 10px rgba(0, 0, 255, .2);
+    transition: transform 150ms ease-in-out;
+    min-height: 100%;
+}
+
+.title-about {
+    color: rgba(6, 6, 82, 0.844);
+    font-weight: bold;
+}
+  
 .about {
     position: absolute;
     top: 0;
@@ -18,7 +44,24 @@
 }
 
 /* Change color on hover */
-.about a:hover {
+/* .about a:hover {
     background-color: #ddd;
     color: rgb(249, 249, 249);
+} */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+.social-links a img {
+    width: 30px;
+    height: 30px;
 }
