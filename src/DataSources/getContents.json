@@ -26,6 +26,13 @@
                 "description": "Install terlebih dahulu rbenv, jalankan perintah `brew install rbenv`, kemudian jalankan perintah `brew install openssl readline sqlite3 autoconf automake libtool bison`, next jalankan perintah `brew install ruby-build`, next jalankan perintah `rbenv install 2.6.10 --ignore-dependencies`, next jalankan perintah `rbenv global 2.6.10`",
                 "link": "https://github.com/rbenv/rbenv",
                 "image": "https://raw.githubusercontent.com/dipaferdian/byby-images/main/Screenshot%202024-01-08%20at%2011.25.21.png"
+            },
+            {
+                "id": 2,
+                "title": "Error install bundler",
+                "description": "Jalankan perintah `ls -ld {your-project}`, next jalankan perintah `sudo chmod u+w {your-project}`, next jalankan perintah `rbenv rehash`, next jalankan perintah `rm -rf .bundle/` ",
+                "link": "https://stackoverflow.com/questions/32675539/ruby-errnoenoent-no-such-file-or-directory-dir-s-mkdir",
+                "image": "https://raw.githubusercontent.com/dipaferdian/byby-images/main/Screenshot%202024-01-08%20at%2013.45.47.png"
             }
         ]
     },
