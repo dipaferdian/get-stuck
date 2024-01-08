@@ -28,5 +28,20 @@
                 "image": "https://miro.medium.com/v2/resize:fit:606/format:webp/1*uWkk81ORI1zqH_j8cgBXaw.png"
             }
         ]
+    },
+    {
+        "id": 3,
+        "title": "React",
+        "description": "Event handler",
+        "author": "dipa ferdian",
+        "child": [
+            {
+                "id": 1,
+                "title": "Error menambahkan value di class name",
+                "description": "Untuk mengatasi hal ini kita perlu memanggil `classList`, sehingga menjadi `event.currentTarget.classList.add()`",
+                "link": "https://react.dev/reference/react-dom/components/common#react-event-object-properties",
+                "image": "https://raw.githubusercontent.com/dipaferdian/byby-images/main/Screenshot%202024-01-08%20at%2010.33.27.png"
+            }
+        ]
     }
 ]
