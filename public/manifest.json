@@ -1,19 +1,19 @@
 {
-  "short_name": "Byby",
-  "name": "Byby Error",
+  "short_name": "GetStuck",
+  "name": "GetStuck Error",
   "icons": [
     {
-      "src": "bybylogofavicon.ico",
+      "src": "getstucklogofavicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "bybylogo.png",
+      "src": "getstucklogo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "bybylogo.png",
+      "src": "getstucklogo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
