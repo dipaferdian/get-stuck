@@ -1,45 +1,31 @@
 [
     {
         "id": 1,
-        "title": "Jejaring Sosial",
-        "description": "Mari kita memahami lebih luas bagaimana jejaring sosial bisa di jadikan sebuah ide untuk menciptakan aplikasi.",
+        "title": "Ruby",
+        "description": "Ruby 2.5.5",
         "author": "dipa ferdian",
         "child": [
             {
                 "id": 1,
-                "title": "Hubungan perasaan dan ungkapan yang ingin di ungkapkan secara psikologi",
-                "description": "Manusia adalah makhluk sosial yang cenderung mencari hubungan dengan orang lain. Interaksi sosial memberikan dukungan emosional, menyediakan saluran komunikasi, dan menciptakan rasa keterhubungan. Ini bisa terjadi dalam keluarga, teman, atau lingkungan sosial lainnya",
-                "link": "https://www.facebook.com/",
-                "image": "https://asset-a.grid.id/crop/0x0:0x0/x/photo/2022/11/28/contoh-interaksi-sosial-di-lingk-20221128085706.jpg"
-            },
-            {
-                "id": 2,
-                "title": "Ungkapan Perasaan",
-                "description": "Ungkapan perasaan melibatkan cara kita menyampaikan emosi dan mengkomunikasikan apa yang kita rasakan kepada orang lain. Ini bisa meliputi ekspresi wajah, bahasa tubuh, atau komunikasi verbal. Mengungkapkan perasaan membantu mengurangi stres, meningkatkan pemahaman antarindividu, dan memperkuat ikatan sosial.",
-                "link": "https://greatmind.id/article/berkenalan-dengan-perasaan",
-                "image": "https://cms.sehatq.com/cdn-cgi/image/format=auto,width=1080,quality=90/public/img/article_img/mengenal-perbedaan-emosi-dan-perasaan-1632160371.jpg"
+                "title": "Error install ruby 2.5.5 di ubuntu 22.04",
+                "description": "Install terlebih dahulu rvm, kemudian jalankan perintah `rvm pkg install openssl`, next jalankan perintah `rvm install 2.5.5 --with-openssl-dir=$HOME/.rvm/usr`",
+                "link": "https://rvm.io/rvm",
+                "image": "https://rvm.io/images/logo.png"
             }
         ]
     },
     {
         "id": 2,
-        "title": "Jejaring Sosial",
-        "description": "Mari kita memahami lebih luas bagaimana jejaring sosial bisa di jadikan sebuah ide untuk menciptakan aplikasi.",
+        "title": "Ruby",
+        "description": "Ruby 2.6.10",
         "author": "dipa ferdian",
         "child": [
             {
                 "id": 1,
-                "title": "Hubungan perasaan dan ungkapan yang ingin di ungkapkan secara psikologi",
-                "description": "Manusia adalah makhluk sosial yang cenderung mencari hubungan dengan orang lain. Interaksi sosial memberikan dukungan emosional, menyediakan saluran komunikasi, dan menciptakan rasa keterhubungan. Ini bisa terjadi dalam keluarga, teman, atau lingkungan sosial lainnya",
-                "link": "https://www.facebook.com/",
-                "image": "https://asset-a.grid.id/crop/0x0:0x0/x/photo/2022/11/28/contoh-interaksi-sosial-di-lingk-20221128085706.jpg"
-            },
-            {
-                "id": 2,
-                "title": "Ungkapan Perasaan",
-                "description": "Ungkapan perasaan melibatkan cara kita menyampaikan emosi dan mengkomunikasikan apa yang kita rasakan kepada orang lain. Ini bisa meliputi ekspresi wajah, bahasa tubuh, atau komunikasi verbal. Mengungkapkan perasaan membantu mengurangi stres, meningkatkan pemahaman antarindividu, dan memperkuat ikatan sosial.",
-                "link": "https://greatmind.id/article/berkenalan-dengan-perasaan",
-                "image": "https://cms.sehatq.com/cdn-cgi/image/format=auto,width=1080,quality=90/public/img/article_img/mengenal-perbedaan-emosi-dan-perasaan-1632160371.jpg"
+                "title": "Error install ruby 2.6.10 di mac os",
+                "description": "Install terlebih dahulu rbenv, jalankan perintah `brew install rbenv`, kemudian jalankan perintah `brew install openssl readline sqlite3 autoconf automake libtool bison`, next jalankan perintah `brew install ruby-build`, next jalankan perintah `rbenv install 2.6.10 --ignore-dependencies`, next jalankan perintah `rbenv global 2.6.10`",
+                "link": "https://github.com/rbenv/rbenv",
+                "image": "https://miro.medium.com/v2/resize:fit:606/format:webp/1*uWkk81ORI1zqH_j8cgBXaw.png"
             }
         ]
     }

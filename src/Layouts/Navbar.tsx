@@ -35,7 +35,7 @@ function Navbar(): React.ReactElement {
     return (
         <>
             <div className="topnav">
-                <a href="#" onClick={(event) => alert('Cooming Soon')}>Byby Think Wide 👋</a>  
+                <a href="#" onClick={(event) => alert('Cooming Soon')}>Byby Error 👋</a>  
                 <div onClick={(event) => handleReadClick(event)}>
                     {showAbout && <a href="#">Read 📖</a> }
                 </div>                   
