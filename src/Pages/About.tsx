@@ -21,7 +21,7 @@ function About(): React.ReactElement {
                             <a href="https://github.com/dipaferdian" target="_blank">
                                 <img src={process.env.PUBLIC_URL + '/github.png'} alt="GitHub" />
                             </a>
-                            <a href="https://github.com/dipaferdian" target="_blank">
+                            <a href="https://www.youtube.com/channel/UCLEwfAfkX9JNtegYieCqpZg" target="_blank">
                                 <img src={process.env.PUBLIC_URL + '/youtube.png'} alt="Youtube" />
                             </a>
                         </div>
