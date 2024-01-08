@@ -43,5 +43,20 @@
                 "image": "https://raw.githubusercontent.com/dipaferdian/byby-images/main/Screenshot%202024-01-08%20at%2010.33.27.png"
             }
         ]
+    },
+    {
+        "id": 4,
+        "title": "TypeScript",
+        "description": "Event handler",
+        "author": "dipa ferdian",
+        "child": [
+            {
+                "id": 1,
+                "title": "Error memanggil event handler",
+                "description": "Untuk mengatasi hal ini kita perlu menggunakan `React.BaseSyntheticEvent`",
+                "link": "https://legacy.reactjs.org/docs/events.html",
+                "image": "https://raw.githubusercontent.com/dipaferdian/byby-images/main/Screenshot%202024-01-08%20at%2011.09.50.png"
+            }
+        ]
     }
 ]
