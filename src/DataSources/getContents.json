@@ -58,5 +58,20 @@
                 "image": "https://raw.githubusercontent.com/dipaferdian/byby-images/main/Screenshot%202024-01-08%20at%2011.09.50.png"
             }
         ]
+    },
+    {
+        "id": 5,
+        "title": "NextJS",
+        "description": "Error module",
+        "author": "dipa ferdian",
+        "child": [
+            {
+                "id": 1,
+                "title": "Error internal/crypto/hash:69",
+                "description": "Untuk mengatasi hal ini kita perlu menjalankan perintah di terminal `export NODE_OPTIONS=--openssl-legacy-provider`",
+                "link": "https://github.com/nodejs/node/issues/47379",
+                "image": "https://raw.githubusercontent.com/dipaferdian/byby-images/main/Screenshot%202024-01-08%20at%2011.47.43.png"
+            }
+        ]
     }
 ]
