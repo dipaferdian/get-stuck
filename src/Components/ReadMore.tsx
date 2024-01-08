@@ -8,7 +8,6 @@ function ReadMore(text: Itext): React.ReactElement {
 
     const [stateText, setText] = useState(text)
 
-    console.log(stateText)
     return (
         <>
             <label className="readmore"></label>

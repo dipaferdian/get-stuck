@@ -2,7 +2,6 @@ import React from "react";
 
 function About(): React.ReactElement {
 
-    console.log(process.env)
     return (
         <>
             <div className="main-about" >
