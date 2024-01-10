@@ -80,5 +80,20 @@
                 "image": "https://raw.githubusercontent.com/dipaferdian/byby-images/main/Screenshot%202024-01-08%20at%2011.47.43.png"
             }
         ]
+    },
+    {
+        "id": 6,
+        "title": "React",
+        "description": "Uncontrolled component",
+        "author": "dipa ferdian",
+        "child": [
+            {
+                "id": 1,
+                "title": "Error uncontrolled input",
+                "description": "Untuk mengatasi hal ini kita perlu membuat useState default sebagai string `const [firstName, setFirstName] = useState('')`",
+                "link": "https://react.dev/reference/react-dom/components/input#controlling-an-input-with-a-state-variable",
+                "image": "https://raw.githubusercontent.com/dipaferdian/get-stuck-images/main/Screenshot%202024-01-10%20at%2010.27.39.png"
+            }
+        ]
     }
 ]
