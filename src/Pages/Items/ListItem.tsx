@@ -135,7 +135,7 @@ function ListItem(): React.ReactElement {
                 {stateLoading ? <Loading /> :
                     data.map((item) => (
                         <div key={item.id} className="grid-item" onClick={(event) => handleClick(event, item.child ?? [])} item-id={item.id}>
-                            <div>
+                            <div ref={targetRef as React.RefObject<HTMLDivElement>}>
                                 <span className="title-item">{item.title}</span>
                             </div>
                             <div>
@@ -143,7 +143,7 @@ function ListItem(): React.ReactElement {
                                     item.description
                                 }</span>
                             </div>
-                            <div className="detail-item" ref={targetRef as React.RefObject<HTMLDivElement>}>
+                            <div className="detail-item">
                                 <div className="bottom-right-item">
                                     <span className="author">
                                         <p className="author-label">Author</p>
