@@ -4,7 +4,7 @@ import "../../Styles/Pages/Items/ListItem.css"
 import Loading from "../../Components/Loading"
 
 const linkTitle = "Tautan Berguna"
-const imageAlt  = "Dari internet"
+const imageAlt = "Dari internet"
 
 function ListItem(): React.ReactElement {
 
@@ -14,6 +14,8 @@ function ListItem(): React.ReactElement {
     const data = GetContents([]);
 
     const elementRef = useRef<HTMLDivElement>(null);
+
+    const targetRef = useRef<HTMLElement>(null);
 
     const handleClick = (event: React.BaseSyntheticEvent, child: Array<Ichild>) => {
 
@@ -69,12 +71,22 @@ function ListItem(): React.ReactElement {
                 ElementDiv.appendChild(elementLink);
 
                 if (item.image) {
-                    elementTitle.appendChild(elementImage);                    
+                    elementTitle.appendChild(elementImage);
                 }
 
             }
         }
+
+        if (event) {
+            event.currentTarget.scrollIntoView({ behavior: 'smooth' });
+          }
     };
+
+    useEffect(() => {
+        if (targetRef.current) {
+            targetRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, []);
 
     useEffect(() => {
 
@@ -131,7 +143,7 @@ function ListItem(): React.ReactElement {
                                     item.description
                                 }</span>
                             </div>
-                            <div className="detail-item">
+                            <div className="detail-item" ref={targetRef as React.RefObject<HTMLDivElement>}>
                                 <div className="bottom-right-item">
                                     <span className="author">
                                         <p className="author-label">Author</p>
