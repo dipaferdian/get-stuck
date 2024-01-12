@@ -33,14 +33,17 @@ function Navbar(): React.ReactElement {
     }
 
     return (
+
         <>
             <div className="topnav">
-                <a href="#" onClick={(event) => alert('Cooming Soon')}>Get Stuck 👋</a>  
+                <a href="#" style={{ cursor: 'default'}}>Getstuck👋</a>  
                 <div onClick={(event) => handleReadClick(event)}>
-                    {showAbout && <a href="#">Error ❌</a> }
+                    {showAbout && <a style={showAbout ? {borderBottom: '1px solid #279ed8'} : {}} href="#" onClick={()=>(alert('Comming soon!'))}>Hard to think</a> }
+                    <></>
+                    {showAbout && <a  style={showAbout ? {borderBottom: '1px solid #279ed8'} : {}} href="#">Error</a> }
                 </div>                   
                 <div className="about" onClick={(event) => handleAboutClick(event)}>
-                   {showRead && <a href="#">About 🙋‍♂️</a>}
+                   {showRead && <a href="#">about</a>}
                 </div>
             </div>
             {
