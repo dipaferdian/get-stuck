@@ -1,9 +1,7 @@
 import React, { useState } from "react"
 import "../Styles/Layouts/Navbar.css"
 import "../Styles/Pages/About.css"
-import "../Styles/Pages/Read.css"
 import About from "../Pages/About"
-import Main from "./Main"
 
 function Navbar(): React.ReactElement {
 
@@ -36,11 +34,9 @@ function Navbar(): React.ReactElement {
 
         <>
             <div className="topnav">
-                <a href="#" style={{ cursor: 'default'}}>Getstuck👋</a>  
+                <a href="#" style={{ cursor: 'default'}}>Getstuck</a>  
                 <div onClick={(event) => handleReadClick(event)}>
-                    {showAbout && <a style={showAbout ? {borderBottom: '1px solid #279ed8'} : {}} href="#" onClick={()=>(alert('Comming soon!'))}>Hard to think</a> }
-                    <></>
-                    {showAbout && <a  style={showAbout ? {borderBottom: '1px solid #279ed8'} : {}} href="#">Error</a> }
+                    {showAbout && <a style={showAbout ? {borderBottom: '1px solid #279ed8'} : {}} href="#">video</a> }
                 </div>                   
                 <div className="about" onClick={(event) => handleAboutClick(event)}>
                    {showRead && <a href="#">about</a>}

@@ -1,92 +1,12 @@
 import React, { createElement, useEffect, useRef, useState } from "react"
-import GetContents, { IContent, Ichild } from "../../Apis/GetContent"
+import GetContents from "../../Apis/GetContent"
 import "../../Styles/Pages/Items/ListItem.css"
 import Loading from "../../Components/Loading"
-
-const linkTitle = "Tautan Berguna"
-const imageAlt = "Dari internet"
 
 function ListItem(): React.ReactElement {
 
     const [stateLoading, setLoading] = useState<boolean>(false);
-    const [currentItem, setCurrentItem] = useState<number[]>([]);
-
     const data = GetContents([]);
-
-    const elementRef = useRef<HTMLDivElement>(null);
-
-    const targetRef = useRef<HTMLElement>(null);
-
-    const handleClick = (event: React.BaseSyntheticEvent, child: Array<Ichild>) => {
-
-        const itemId = event.currentTarget.getAttribute('item-id') as number;
-
-        if (currentItem.includes(itemId)) {
-            setCurrentItem([...currentItem, itemId]);
-            event.currentTarget.classList.add('clicked');
-            elementRef.current?.classList.add('clicked');
-
-            return null
-        }
-
-        setCurrentItem([...currentItem, itemId]);
-        event.currentTarget.classList.add('clicked');
-        elementRef.current?.classList.add('clicked');
-
-
-        // Get the parent element
-        let parentElement = event.currentTarget
-
-        const childs = child ?? []
-
-        if (childs.length > 0) {
-
-            for (const item of childs) {
-
-                // Create a new element
-                let ElementDiv = document.createElement("div");
-                let elementTitle = document.createElement("div");
-                let elementLink = document.createElement("a");
-                let elementImage = document.createElement("img");
-
-                ElementDiv.textContent = item.description as string
-                ElementDiv.classList.add('grid-item-child');
-
-                elementTitle.textContent = item.title as string
-                elementTitle.classList.add('title-child');
-
-                elementLink.textContent = linkTitle
-                elementLink.classList.add('title-link-child')
-                elementLink.setAttribute('href', item.link as string)
-                elementLink.setAttribute('target', '_blank')
-
-                elementImage.setAttribute('src', item.image as string)
-                elementImage.setAttribute('alt', imageAlt)
-
-                parentElement.append(elementTitle);
-
-                // Insert the new element before the first child
-                parentElement.append(ElementDiv);
-
-                ElementDiv.appendChild(elementLink);
-
-                if (item.image) {
-                    elementTitle.appendChild(elementImage);
-                }
-
-            }
-        }
-
-        if (event) {
-            event.currentTarget.scrollIntoView({ behavior: 'smooth' });
-          }
-    };
-
-    useEffect(() => {
-        if (targetRef.current) {
-            targetRef.current.scrollIntoView({ behavior: 'smooth' });
-        }
-    }, []);
 
     useEffect(() => {
 
@@ -100,56 +20,17 @@ function ListItem(): React.ReactElement {
 
     }, [data])
 
-    useEffect(() => {
-
-
-        if (currentItem.length > 1) {
-
-            const currentElement = elementRef.current?.children[currentItem[0] - 1]
-
-            currentElement?.classList.remove('clicked')
-
-            currentElement?.querySelectorAll('.grid-item-child')?.forEach((child) => {
-                child.remove()
-            })
-
-            currentElement?.querySelectorAll('.title-child')?.forEach((child) => {
-                child.remove()
-            })
-
-            elementRef.current?.classList.remove('clicked');
-
-            if (currentItem[0] == currentItem[1]) {
-                setCurrentItem([])
-            } else {
-                currentItem.shift()
-                elementRef.current?.classList.add('clicked');
-            }
-        }
-
-    }, [handleClick])
-
     return (
         <>
-            <div className="grid-container" ref={elementRef}>
+            <div className="flex-container">
                 {stateLoading ? <Loading /> :
                     data.map((item) => (
-                        <div key={item.id} className="grid-item" onClick={(event) => handleClick(event, item.child ?? [])} item-id={item.id}>
-                            <div ref={targetRef as React.RefObject<HTMLDivElement>}>
+                        <div key={item.id} className="flex-item">
+                            <div className="title-parent">
                                 <span className="title-item">{item.title}</span>
                             </div>
                             <div>
-                                <span className="description-item">{
-                                    item.description
-                                }</span>
-                            </div>
-                            <div className="detail-item">
-                                <div className="bottom-right-item">
-                                    <span className="author">
-                                        <p className="author-label">Author</p>
-                                        <p className="author-name">{item.author}</p>
-                                    </span>
-                                </div>
+                                <iframe className="video" src={`https://www.youtube.com/embed/${item.video}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                             </div>
                         </div>
                     )

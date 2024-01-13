@@ -5,6 +5,7 @@ function Loading(): React.ReactElement {
 
     return(
         <>
+          <span style={{textAlign: 'center'}}>Coming Soon!</span>
          <div className="spinner"></div>
         </>
     )
