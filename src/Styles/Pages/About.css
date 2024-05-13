@@ -1,6 +1,5 @@
-
 .main-about {
-    margin: 0 auto; 
+    margin: 0 auto;
     padding-top: 90px;
     display: flex;
     flex-direction: column;
@@ -8,7 +7,6 @@
 
 .flex-about {
     cursor: default;
-    padding: 10px;
     margin: auto;
     background-color: white;
     min-width: 300px;
@@ -17,13 +15,20 @@
     box-shadow: 10px 12px 10px 10px rgba(0, 0, 255, .2);
     transition: transform 150ms ease-in-out;
     min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-about > div {
+   margin: 0.5em;
 }
 
 .title-about {
     color: rgba(6, 6, 82, 0.844);
     font-weight: bold;
 }
-  
+
 /* Style the about links */
 .about a {
     float: left;
@@ -44,7 +49,6 @@
 .social-links {
     display: flex;
     justify-content: center;
-    margin-top: 1em;
 }
 
 .social-links a {

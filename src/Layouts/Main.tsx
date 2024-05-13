@@ -1,17 +1,15 @@
 import React from "react"
 import "../Styles/Layouts/Main.css"
+import About from "../Pages/About"
 
-interface ILayout {
-  pages: React.ReactElement  
-}
 
-function Main(render_page: ILayout): React.ReactElement {
+function Main(): React.ReactElement {
 
     return (
         <>
             <div id="main">
               <div className="content">
-               {render_page.pages}
+                <About />
               </div>
             </div>
         </>

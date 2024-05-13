@@ -1,9 +1,13 @@
 import React from 'react';
-import Index from './Pages/Page';
+import Navbar from './Layouts/Navbar';
+import Main from './Layouts/Main';
 
 function App(): React.ReactElement {
   return (
-    <Index />
+    <>
+     <Navbar />
+     <Main />
+    </>
   );
 }
 
