@@ -7,7 +7,7 @@
 }
 
 .flex-about {
-    cursor: pointer;
+    cursor: default;
     padding: 10px;
     margin: auto;
     background-color: white;

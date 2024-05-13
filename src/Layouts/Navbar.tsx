@@ -36,7 +36,7 @@ function Navbar(): React.ReactElement {
             <div className="topnav">
                 <a href="#" style={{ cursor: 'default'}}>Getstuck</a>  
                 <div onClick={(event) => handleReadClick(event)}>
-                    {showAbout && <a style={showAbout ? {borderBottom: '1px solid #279ed8'} : {}} href="#">video</a> }
+                    {showAbout && <a style={showAbout ? {borderBottom: '1px solid #279ed8'} : {}} href="#">experiences</a> }
                 </div>                   
                 <div className="about" onClick={(event) => handleAboutClick(event)}>
                    {showRead && <a href="#">about</a>}
